@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
@@ -47,13 +41,26 @@ p {
     margin-bottom: 20px;
 }
 
-img, video, audio {
+img {
     max-width: 100%;
-    height: auto;
+    border: 2px solid #d10000;
     border-radius: 8px;
-    margin: 20px 0;
+    margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
     display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border: 3px solid #b30000;
+    border-radius: 10px;
+}
+
+audio {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
 }
 
 ul {
@@ -88,9 +95,13 @@ ul {
         max-width: 100%;
     }
 
-    img, video, audio {
-        margin: 10px 0;
-        box-shadow: none;
+    img {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    iframe,audio {
+        width: 100%;
     }
 
     .image-container {
